@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class XfOOrth::SymMap - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/fOOrth/fOOrth_sym_map.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="../Object.html">Object</a>
+  
+</nav>
+
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-c-spec">::spec</a>
+    
+    <li ><a href="#method-i-add_entry">#add_entry</a>
+    
+    <li ><a href="#method-i-fwd_count">#fwd_count</a>
+    
+    <li ><a href="#method-i-has_entry-3F">#has_entry?</a>
+    
+    <li ><a href="#method-i-has_mapping-3F">#has_mapping?</a>
+    
+    <li ><a href="#method-i-map">#map</a>
+    
+    <li ><a href="#method-i-rev_count">#rev_count</a>
+    
+    <li ><a href="#method-i-to_a">#to_a</a>
+    
+    <li ><a href="#method-i-unmap">#unmap</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../ClassAndObjectTester.html">ClassAndObjectTester</a>
+  
+    <li><a href="../Complex.html">Complex</a>
+  
+    <li><a href="../ContextTester.html">ContextTester</a>
+  
+    <li><a href="../FileSourceTester.html">FileSourceTester</a>
+  
+    <li><a href="../HelperTester.html">HelperTester</a>
+  
+    <li><a href="../Numeric.html">Numeric</a>
+  
+    <li><a href="../Object.html">Object</a>
+  
+    <li><a href="../Rational.html">Rational</a>
+  
+    <li><a href="../String.html">String</a>
+  
+    <li><a href="../StringSourceTester.html">StringSourceTester</a>
+  
+    <li><a href="../SymEntryTester.html">SymEntryTester</a>
+  
+    <li><a href="../SymHierarchyTester.html">SymHierarchyTester</a>
+  
+    <li><a href="../SymMapTester.html">SymMapTester</a>
+  
+    <li><a href="../XfOOrth.html">XfOOrth</a>
+  
+    <li><a href="../XfOOrth/Context.html">XfOOrth::Context</a>
+  
+    <li><a href="../XfOOrth/FileSource.html">XfOOrth::FileSource</a>
+  
+    <li><a href="../XfOOrth/ReadPoint.html">XfOOrth::ReadPoint</a>
+  
+    <li><a href="../XfOOrth/StringSource.html">XfOOrth::StringSource</a>
+  
+    <li><a href="../XfOOrth/SymEntry.html">XfOOrth::SymEntry</a>
+  
+    <li><a href="../XfOOrth/SymHierarchy.html">XfOOrth::SymHierarchy</a>
+  
+    <li><a href="../XfOOrth/SymMap.html">XfOOrth::SymMap</a>
+  
+    <li><a href="../XfOOrth/VirtualMachine.html">XfOOrth::VirtualMachine</a>
+  
+    <li><a href="../XfOOrth/XVirtualMachine.html">XfOOrth::XVirtualMachine</a>
+  
+    <li><a href="../XfOOrth/XfOOrthClass.html">XfOOrth::XfOOrthClass</a>
+  
+    <li><a href="../XfOOrth/XfOOrthObject.html">XfOOrth::XfOOrthObject</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class XfOOrth::SymMap</h1>
+
+  <div id="description" class="description">
+    
+<p>The SymMap class is used to map symbols to other symbols that are not going
+to conflict with existing symbols. This class is fairly tightly linked to 
+the <a href="SymHierarchy.html">SymHierarchy</a> class as the two work
+closely together to map symbols for fOOrth.</p>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Create a new SymMap object.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_sym_map.rb, line 69</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>
+  <span class="ruby-ivar">@fwd_map</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-ivar">@rev_map</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+      <div id="method-c-spec" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">spec</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>This method returns the OptionList variable that details the parameters 
+used for a symbol mapping. These are:</p>
+
+<h4 id="method-c-spec-label-Category%3A+sym_type">Category: sym_type<span><a href="#method-c-spec-label-Category%3A+sym_type">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<p>The type of symbol being mapped. These are one of the following:</p>
+<ul><li>
+<p>:empty - An empty method, no code is present or generated.</p>
+</li><li>
+<p>:word  - A classic FORTH method. Essentially a method of the virtual
+machine.</p>
+</li><li>
+<p>:class - A class definition. The block returns the class object.</p>
+</li><li>
+<p>:method - An instance method of an arbitrary class.</p>
+</li><li>
+<p>:local_variable - A local variable.</p>
+</li><li>
+<p>:instance_variable - An instance variable.</p>
+</li><li>
+<p>:thread_variable - A thread variable.</p>
+</li><li>
+<p>:global_variable - A global variable.</p>
+</li></ul>
+
+<h4 id="method-c-spec-label-Category%3A+immediate">Category: immediate<span><a href="#method-c-spec-label-Category%3A+immediate">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<p>Is this an immediate symbol that executes even in compile or deferred modes
+or is it a standard symbol that compiles or executes normally?</p>
+<ul><li>
+<p>&lt;default&gt; - Normal priority.</p>
+</li><li>
+<p>:immediate - Priority execution.</p>
+</li></ul>
+
+<h4 id="method-c-spec-label-Category%3A+block">Category: block<span><a href="#method-c-spec-label-Category%3A+block">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<p>The action associated with this symbol. Normally, this block performs  that
+actions required by the symbol.</p>
+<ul><li>
+<p>&lt;default&gt; - The block raises an exception.</p>
+</li></ul>
+
+<h4 id="method-c-spec-label-Validation">Validation<span><a href="#method-c-spec-label-Validation">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<p>The parameters are verified to enforce the rule that only :word and 
+:instance_method are compatible with the :immediate property.</p>
+
+<h4 id="method-c-spec-label-Note%3A">Note:<span><a href="#method-c-spec-label-Note%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<p>This uses the OptionList gem.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="spec-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_sym_map.rb, line 42</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">spec</span>; 
+  <span class="ruby-identifier">@@spec</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">OptionList</span>.<span class="ruby-identifier">new</span>([<span class="ruby-value">:sym_type</span>,
+                             <span class="ruby-keyword">false</span>,
+                             <span class="ruby-value">:empty</span>,
+                             <span class="ruby-value">:word</span>,
+                             <span class="ruby-value">:class</span>,
+                             <span class="ruby-value">:method</span>,
+                             <span class="ruby-value">:local_variable</span>,
+                             <span class="ruby-value">:instance_variable</span>,
+                             <span class="ruby-value">:thread_variable</span>,
+                             <span class="ruby-value">:global_variable</span>],
+                            [<span class="ruby-value">:immediate</span>,
+                             <span class="ruby-keyword">nil</span>,
+                             <span class="ruby-value">:immediate</span>],
+                            <span class="ruby-identifier">block</span><span class="ruby-operator">:</span> <span class="ruby-identifier">@@def_blk</span>,
+                           ) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">o</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">immediate</span>
+      <span class="ruby-keyword">unless</span> [<span class="ruby-value">:word</span>, <span class="ruby-value">:method</span>].<span class="ruby-identifier">include?</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">sym_type</span>
+        <span class="ruby-identifier">ferr</span> <span class="ruby-node">&quot;A #{o.sym_type} may not be marked immediate.&quot;</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>  
+
+  <span class="ruby-identifier">@@spec</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- spec-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- spec-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-add_entry" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">add_entry</span><span
+            class="method-args">(name, *options)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Add a mapping for a string to a symbol that will not collide with  existing
+symbols.</p>
+
+<h4 id="method-i-add_entry-label-Parameters%3A">Parameters:<span><a href="#method-i-add_entry-label-Parameters%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>name - The <em>string</em> to be mapped.</p>
+</li><li>
+<p>options - Parameter splat options, see @@spec for details.</p>
+</li></ul>
+
+<h4 id="method-i-add_entry-label-Returns%3A">Returns:<span><a href="#method-i-add_entry-label-Returns%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<p>A <a href="SymEntry.html">SymEntry</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="add_entry-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_sym_map.rb, line 85</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">add_entry</span>(<span class="ruby-identifier">name</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">options</span>)
+  <span class="ruby-identifier">o</span> = <span class="ruby-constant">SymMap</span>.<span class="ruby-identifier">spec</span>.<span class="ruby-identifier">select</span>(<span class="ruby-identifier">options</span>)
+  <span class="ruby-identifier">ferr</span> <span class="ruby-string">&quot;Expecting a string.&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">name</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>)
+  <span class="ruby-identifier">ferr</span> <span class="ruby-node">&quot;Symbol entry for #{name} already exists&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">has_entry?</span>(<span class="ruby-identifier">name</span>)
+
+  <span class="ruby-identifier">@@sync</span>.<span class="ruby-identifier">synchronize</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">symbol</span> = (<span class="ruby-identifier">@@incrementer</span>.<span class="ruby-identifier">succ!</span>).<span class="ruby-identifier">to_sym</span>
+    <span class="ruby-identifier">entry</span> = <span class="ruby-constant">SymEntry</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">symbol</span>, <span class="ruby-identifier">o</span>.<span class="ruby-identifier">sym_type</span>, <span class="ruby-identifier">o</span>.<span class="ruby-identifier">immediate?</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">o</span>.<span class="ruby-identifier">block</span>)
+    <span class="ruby-ivar">@fwd_map</span>[<span class="ruby-identifier">name</span>] = <span class="ruby-identifier">entry</span>
+    <span class="ruby-ivar">@rev_map</span>[<span class="ruby-identifier">symbol</span>] = <span class="ruby-identifier">entry</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- add_entry-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- add_entry-method -->
+
+    
+      <div id="method-i-fwd_count" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fwd_count</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>How many entries are in the forward map? Used for testing only.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="fwd_count-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_sym_map.rb, line 124</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">fwd_count</span>; <span class="ruby-ivar">@fwd_map</span>.<span class="ruby-identifier">count</span>; <span class="ruby-keyword">end</span></pre>
+          </div><!-- fwd_count-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- fwd_count-method -->
+
+    
+      <div id="method-i-has_entry-3F" class="method-detail method-alias">
+        
+        <div class="method-heading">
+          <span class="method-name">has_entry?</span><span
+            class="method-args">(name)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+        <div class="aliases">
+          Alias for: <a href="SymMap.html#method-i-map">map</a>
+        </div>
+        
+      </div><!-- has_entry-3F-method -->
+
+    
+      <div id="method-i-has_mapping-3F" class="method-detail method-alias">
+        
+        <div class="method-heading">
+          <span class="method-name">has_mapping?</span><span
+            class="method-args">(mapped)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+        <div class="aliases">
+          Alias for: <a href="SymMap.html#method-i-unmap">unmap</a>
+        </div>
+        
+      </div><!-- has_mapping-3F-method -->
+
+    
+      <div id="method-i-map" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">map</span><span
+            class="method-args">(name)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get the entry for the mapping string. Return nil if there is no entry.</p>
+
+<h4 id="method-i-map-label-Parameters%3A">Parameters:<span><a href="#method-i-map-label-Parameters%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>name - The string to be looked up.</p>
+</li></ul>
+
+<h4 id="method-i-map-label-Returns%3A">Returns:<span><a href="#method-i-map-label-Returns%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<p>A <a href="SymEntry.html">SymEntry</a> or nil if the symbol is not in the
+map.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="map-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_sym_map.rb, line 103</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">map</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-ivar">@fwd_map</span>[<span class="ruby-identifier">name</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- map-source -->
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="SymMap.html#method-i-has_entry-3F">has_entry?</a>
+        </div>
+        
+
+        
+      </div><!-- map-method -->
+
+    
+      <div id="method-i-rev_count" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">rev_count</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>How many entries are in the reverse map? Used for testing only.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="rev_count-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_sym_map.rb, line 127</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">rev_count</span>; <span class="ruby-ivar">@rev_map</span>.<span class="ruby-identifier">count</span>; <span class="ruby-keyword">end</span></pre>
+          </div><!-- rev_count-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- rev_count-method -->
+
+    
+      <div id="method-i-to_a" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">to_a</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Return this symbol map in an array. This is used to allow a single symbol
+map to be used as the basis for a symbol hierarchy.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="to_a-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_sym_map.rb, line 76</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_a</span>; [<span class="ruby-keyword">self</span>]; <span class="ruby-keyword">end</span></pre>
+          </div><!-- to_a-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- to_a-method -->
+
+    
+      <div id="method-i-unmap" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">unmap</span><span
+            class="method-args">(mapped)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get the entry for the mapping symbol. Return nil if there is no entry.</p>
+
+<h4 id="method-i-unmap-label-Parameters%3A">Parameters:<span><a href="#method-i-unmap-label-Parameters%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>mapped - The mapping of the desired symbol.</p>
+</li></ul>
+
+<h4 id="method-i-unmap-label-Returns%3A">Returns:<span><a href="#method-i-unmap-label-Returns%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<p>A <a href="SymEntry.html">SymEntry</a> or nil if the symbol is not in the
+map.</p>
+
+<h4 id="method-i-unmap-label-Note%3A">Note:<span><a href="#method-i-unmap-label-Note%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<p>If multiple symbols share the same mapping, the symbol returned is that of
+the one defined first.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="unmap-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_sym_map.rb, line 117</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">unmap</span>(<span class="ruby-identifier">mapped</span>)
+  <span class="ruby-ivar">@rev_map</span>[<span class="ruby-identifier">mapped</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- unmap-source -->
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="SymMap.html#method-i-has_mapping-3F">has_mapping?</a>
+        </div>
+        
+
+        
+      </div><!-- unmap-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

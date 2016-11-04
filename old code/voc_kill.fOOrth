@@ -1,0 +1,12 @@
+( Test a vocabulary boundary condition. )
+
+voc_create"Test"
+
+: test ."Testing 1 2 3" cr ;
+
+test
+
+voc_delete"System"
+
+test
+

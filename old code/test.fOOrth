@@ -1,0 +1,40 @@
+( A simple numeric table )
+( n -- n squared ) : square dup * ;
+( n -- n cubed )   : cube dup square * ;
+
+: .table 1+ 1 do i 3 .r i square 4 .r i cube 5 .r cr loop ;
+
+10 .table cr
+
+( Our times tables! )
+: .times 13 1 do 
+    13 1 do j i * 4 .r loop cr
+  loop ;
+
+.times  cr
+  
+( Crazy for factorials! )
+: fact 1+ dup dup / swap 1 do i * loop ;
+
+100 dup . ." fact = " fact . cr cr
+
+: .testdump 4 1 do 
+    4 1 do csd i 3 .r -i 3 .r j 6 .r -j 3 .r cr loop
+  loop ;
+  
+.testdump
+ 
+ fwd: fnf
+ : fnf dup 0> if ."(" 1- fnf ." is Not Forth)" else ."FNF" drop then ;
+ 
+ 6 0 do cr i fnf cr loop cr
+ 
+ 8 spaces  ."0123456789ABCDEF" cr
+ 7 spaces ."+----------------" cr
+ 8 2 do 
+   5 spaces i . ." |" 16 0 
+     do j 16 * i + emit loop 
+   cr
+ loop
+ 
+ 

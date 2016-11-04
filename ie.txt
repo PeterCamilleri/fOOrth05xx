@@ -1,0 +1,28 @@
+mikecanmore@hotmail.com
+vic.pion@gmail.com
+
+
+C:\Sites\fOOrth>ruby sire.rb
+Welcome to SIRE Version 0.2.5
+Simple Interactive Ruby Environment
+
+SIRE>@a = lambda { puts self.inspect }
+#<Proc:0x2247f00@(eval):1 (lambda)>
+
+SIRE>@a.call
+main
+
+SIRE>class FOO; end;
+
+SIRE>FOO.instance_exec(&@a)
+FOO
+
+SIRE>@b = FOO.new
+#<FOO:0x20ceff8>
+
+SIRE>@b.instance_exec(&@a)
+#<FOO:0x20ceff8>
+
+SIRE>
+
+

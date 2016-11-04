@@ -1,0 +1,36 @@
+lib/fOOrth/fOOrth_class.rb -- 0 warnings
+lib/fOOrth/fOOrth_compiler.rb -- 12 warnings:
+  [58, 83]:XfOOrth::VirtualMachine#execute calls @context[:quotes] = 0 twice (DuplicateMethodCall)
+  [50]:XfOOrth::VirtualMachine#execute has approx 17 statements (TooManyStatements)
+  [71]:XfOOrth::VirtualMachine#execute has the variable name 'e' (UncommunicativeVariableName)
+  [75]:XfOOrth::VirtualMachine#execute has the variable name 't' (UncommunicativeVariableName)
+  [73]:XfOOrth::VirtualMachine#execute has the variable name 'z' (UncommunicativeVariableName)
+  [98, 102]:XfOOrth::VirtualMachine#process_string calls (@buffer << "vm.push(#{string.embed}); ") twice (DuplicateMethodCall)
+  [98, 102]:XfOOrth::VirtualMachine#process_string calls string.embed twice (DuplicateMethodCall)
+  [89]:XfOOrth::VirtualMachine#process_string has approx 8 statements (TooManyStatements)
+  [116, 127, 132]:XfOOrth::VirtualMachine#process_word? calls sections[0] 3 times (DuplicateMethodCall)
+  [127, 132]:XfOOrth::VirtualMachine#process_word? calls word.generate(self, sections[0]) twice (DuplicateMethodCall)
+  [109]:XfOOrth::VirtualMachine#process_word? has approx 13 statements (TooManyStatements)
+  [117]:XfOOrth::VirtualMachine#process_word? performs a nil-check. (NilCheck)
+lib/fOOrth/fOOrth_console.rb -- 2 warnings:
+  [43, 43]:XfOOrth::Console#prompt calls vm.context twice (DuplicateMethodCall)
+  [41]:XfOOrth::Console#prompt doesn't depend on instance state (UtilityFunction)
+lib/fOOrth/fOOrth_context.rb -- 0 warnings
+lib/fOOrth/fOOrth_exceptions.rb -- 0 warnings
+lib/fOOrth/fOOrth_file_source.rb -- 0 warnings
+lib/fOOrth/fOOrth_helper.rb -- 0 warnings
+lib/fOOrth/fOOrth_object.rb -- 0 warnings
+lib/fOOrth/fOOrth_parser.rb -- 6 warnings:
+  [66]:XfOOrth::Parser#get_string has approx 8 statements (TooManyStatements)
+  [46, 58]:XfOOrth::Parser#get_word calls @source.get twice (DuplicateMethodCall)
+  [42]:XfOOrth::Parser#get_word has approx 10 statements (TooManyStatements)
+  [47]:XfOOrth::Parser#get_word performs a nil-check. (NilCheck)
+  [91, 93]:XfOOrth::Parser#process_backslash calls @source.eol? twice (DuplicateMethodCall)
+  [89, 92, 93]:XfOOrth::Parser#process_backslash calls @source.get 3 times (DuplicateMethodCall)
+lib/fOOrth/fOOrth_read_point.rb -- 0 warnings
+lib/fOOrth/fOOrth_string_source.rb -- 0 warnings
+lib/fOOrth/fOOrth_sym_entry.rb -- 0 warnings
+lib/fOOrth/fOOrth_sym_hierarchy.rb -- 0 warnings
+lib/fOOrth/fOOrth_sym_map.rb -- 0 warnings
+lib/fOOrth/fOOrth_virtual_machine.rb -- 0 warnings
+20 total warnings

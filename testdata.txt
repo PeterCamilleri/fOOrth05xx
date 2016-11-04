@@ -1,0 +1,50 @@
+Class Object == #<#<Class:0x21eb8a8>:0x21eb830
+ @children=
+  {"Class"=>
+    #<#<Class:0x21eba40>:0x21eb9c8
+     @children={},
+     @class_dictionary={},
+     @fOOrth_parent=#<#<Class:0x21eb8a8>:0x21eb830 ...>,
+     @instance_dictionary={},
+     @instance_template=#<Class:0x21eb968>,
+     @name="Class">,
+   "MyClass"=>
+    #<#<Class:0x21eb500>:0x21eb4a0
+     @children={},
+     @class_dictionary={},
+     @fOOrth_parent=#<#<Class:0x21eb8a8>:0x21eb830 ...>,
+     @instance_dictionary={},
+     @instance_template=#<Class:0x21eb440>,
+     @name="MyClass">},
+ @class_dictionary={},
+ @fOOrth_parent=nil,
+ @instance_dictionary=
+  {:init=>#<Proc:0x21eb6e0@C:/Sites/fOOrth/fOOrth_class.rb:41>},
+ @instance_template=#<Class:0x21eb7d0>,
+ @name="Object">
+ 
+Class Class == #<#<Class:0x21eba40>:0x21eb9c8
+ @children={},
+ @class_dictionary={},
+ @fOOrth_parent=
+  #<#<Class:0x21eb8a8>:0x21eb830
+   @children=
+    {"Class"=>#<#<Class:0x21eba40>:0x21eb9c8 ...>,
+     "MyClass"=>
+      #<#<Class:0x21eb500>:0x21eb4a0
+       @children={},
+       @class_dictionary={},
+       @fOOrth_parent=#<#<Class:0x21eb8a8>:0x21eb830 ...>,
+       @instance_dictionary={},
+       @instance_template=#<Class:0x21eb440>,
+       @name="MyClass">},
+   @class_dictionary={},
+   @fOOrth_parent=nil,
+   @instance_dictionary=
+    {:init=>#<Proc:0x21eb6e0@C:/Sites/fOOrth/fOOrth_class.rb:41>},
+   @instance_template=#<Class:0x21eb7d0>,
+   @name="Object">,
+ @instance_dictionary={},
+ @instance_template=#<Class:0x21eb968>,
+ @name="Class">
+ 

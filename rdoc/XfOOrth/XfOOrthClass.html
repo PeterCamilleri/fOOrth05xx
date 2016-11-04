@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class XfOOrth::XfOOrthClass - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/fOOrth/fOOrth_class.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">XfOOrthObject
+  
+</nav>
+
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li ><a href="#method-c-_create_initial_classes">::_create_initial_classes</a>
+    
+    <li ><a href="#method-c-all_classes">::all_classes</a>
+    
+    <li ><a href="#method-c-class_class">::class_class</a>
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-c-object_class">::object_class</a>
+    
+    <li ><a href="#method-c-vm_class">::vm_class</a>
+    
+    <li ><a href="#method-i-add_shared_method">#add_shared_method</a>
+    
+    <li ><a href="#method-i-create_fOOrth_instance">#create_fOOrth_instance</a>
+    
+    <li ><a href="#method-i-create_fOOrth_subclass">#create_fOOrth_subclass</a>
+    
+    <li ><a href="#method-i-instance_base_class">#instance_base_class</a>
+    
+    <li ><a href="#method-i-link_shared_method">#link_shared_method</a>
+    
+    <li ><a href="#method-i-purge_shared_method">#purge_shared_method</a>
+    
+    <li ><a href="#method-i-set_fOOrth_parent">#set_fOOrth_parent</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../ClassAndObjectTester.html">ClassAndObjectTester</a>
+  
+    <li><a href="../Complex.html">Complex</a>
+  
+    <li><a href="../ContextTester.html">ContextTester</a>
+  
+    <li><a href="../FileSourceTester.html">FileSourceTester</a>
+  
+    <li><a href="../HelperTester.html">HelperTester</a>
+  
+    <li><a href="../Numeric.html">Numeric</a>
+  
+    <li><a href="../Object.html">Object</a>
+  
+    <li><a href="../Rational.html">Rational</a>
+  
+    <li><a href="../String.html">String</a>
+  
+    <li><a href="../StringSourceTester.html">StringSourceTester</a>
+  
+    <li><a href="../SymEntryTester.html">SymEntryTester</a>
+  
+    <li><a href="../SymHierarchyTester.html">SymHierarchyTester</a>
+  
+    <li><a href="../SymMapTester.html">SymMapTester</a>
+  
+    <li><a href="../XfOOrth.html">XfOOrth</a>
+  
+    <li><a href="../XfOOrth/Context.html">XfOOrth::Context</a>
+  
+    <li><a href="../XfOOrth/FileSource.html">XfOOrth::FileSource</a>
+  
+    <li><a href="../XfOOrth/ReadPoint.html">XfOOrth::ReadPoint</a>
+  
+    <li><a href="../XfOOrth/StringSource.html">XfOOrth::StringSource</a>
+  
+    <li><a href="../XfOOrth/SymEntry.html">XfOOrth::SymEntry</a>
+  
+    <li><a href="../XfOOrth/SymHierarchy.html">XfOOrth::SymHierarchy</a>
+  
+    <li><a href="../XfOOrth/SymMap.html">XfOOrth::SymMap</a>
+  
+    <li><a href="../XfOOrth/VirtualMachine.html">XfOOrth::VirtualMachine</a>
+  
+    <li><a href="../XfOOrth/XVirtualMachine.html">XfOOrth::XVirtualMachine</a>
+  
+    <li><a href="../XfOOrth/XfOOrthClass.html">XfOOrth::XfOOrthClass</a>
+  
+    <li><a href="../XfOOrth/XfOOrthObject.html">XfOOrth::XfOOrthObject</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class XfOOrth::XfOOrthClass</h1>
+
+  <div id="description" class="description">
+    
+<p>The XfOOrthClass class is basis for all fOOrth classes.</p>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-children" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">children</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>A hash containing all of the classes derived from this one. <br>It maps (a
+class name) =&gt; (an object derived from XfOOrthClass)</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-dictionary" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">dictionary</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>A hash containing the methods defined for instances of this class.  <br>It
+maps (a symbol) =&gt; (a lambda block)</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-fOOrth_parent" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">fOOrth_parent</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>The parent fOOrth class of this one.</p>
+
+<h4 id="attribute-i-fOOrth_parent-label-Special+Cases%3A">Special Cases:<span><a href="#attribute-i-fOOrth_parent-label-Special+Cases%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<p>The fOOrth_parent of the fOOrth class “Object” is nil.</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-name" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">name</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>The name of the fOOrth class.</p>
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-_create_initial_classes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">_create_initial_classes</span><span
+            class="method-args">(clear_all=false)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Create the initial classes in the fOOrth hierarchy.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="_create_initial_classes-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_class.rb, line 29</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">_create_initial_classes</span>(<span class="ruby-identifier">clear_all</span>=<span class="ruby-keyword">false</span>)
+  <span class="ruby-identifier">@@all_classes</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">clear_all</span>
+  
+  <span class="ruby-identifier">class_anon</span> = <span class="ruby-constant">Class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">XfOOrthClass</span>) {<span class="ruby-ivar">@fOOrth_class</span> = <span class="ruby-keyword">nil</span>}
+  <span class="ruby-identifier">class_class</span> = <span class="ruby-identifier">class_anon</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">'Class'</span>, <span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">class_anon</span>.<span class="ruby-identifier">fOOrth_class</span> = <span class="ruby-identifier">class_class</span>
+  
+  <span class="ruby-identifier">object_anon</span> = <span class="ruby-constant">Class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">XfOOrthClass</span>) {<span class="ruby-ivar">@fOOrth_class</span> = <span class="ruby-identifier">class_class</span>}
+  <span class="ruby-identifier">@@object_class</span> = <span class="ruby-identifier">object_anon</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">'Object'</span>, <span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">@@object_class</span>.<span class="ruby-identifier">add_shared_method</span>(<span class="ruby-value">:init</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">vm</span><span class="ruby-operator">|</span> }
+  <span class="ruby-identifier">@@object_class</span>.<span class="ruby-identifier">children</span>[<span class="ruby-string">'Class'</span>] = <span class="ruby-identifier">class_class</span>
+  
+  <span class="ruby-identifier">class_class</span>.<span class="ruby-identifier">set_fOOrth_parent</span>(<span class="ruby-identifier">@@object_class</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- _create_initial_classes-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- _create_initial_classes-method -->
+
+    
+      <div id="method-c-all_classes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">all_classes</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get the class tree.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="all_classes-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_class.rb, line 22</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">all_classes</span>; <span class="ruby-identifier">@@all_classes</span>; <span class="ruby-keyword">end</span></pre>
+          </div><!-- all_classes-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- all_classes-method -->
+
+    
+      <div id="method-c-class_class" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">class_class</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get the class class.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="class_class-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_class.rb, line 16</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">class_class</span>; <span class="ruby-identifier">@@all_classes</span>[<span class="ruby-string">'Class'</span>]; <span class="ruby-keyword">end</span></pre>
+          </div><!-- class_class-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- class_class-method -->
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(name, fOOrth_parent)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Create an new instance of a fOOrth class.</p>
+
+<h4 id="method-c-new-label-Parameters%3A">Parameters:<span><a href="#method-c-new-label-Parameters%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>name - The name of this fOOrth class.</p>
+</li><li>
+<p>fOOrth_parent - The class that is the parent of this class.</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_class.rb, line 64</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">fOOrth_parent</span>)
+  <span class="ruby-ivar">@name</span>          = <span class="ruby-identifier">name</span>
+  <span class="ruby-ivar">@fOOrth_parent</span> = <span class="ruby-identifier">fOOrth_parent</span>
+  <span class="ruby-ivar">@dictionary</span>    = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-ivar">@children</span>      = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">klass</span>          = <span class="ruby-keyword">self</span>
+  <span class="ruby-identifier">ferr</span> <span class="ruby-string">'Class #{@name} already exists.'</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">@@all_classes</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-ivar">@name</span>)
+  <span class="ruby-identifier">@@all_classes</span>[<span class="ruby-ivar">@name</span>]  = <span class="ruby-keyword">self</span>
+  
+  <span class="ruby-ivar">@instance_template</span> = <span class="ruby-constant">Class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">instance_base_class</span>) <span class="ruby-keyword">do</span>
+    <span class="ruby-ivar">@fOOrth_class</span> = <span class="ruby-identifier">klass</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+      <div id="method-c-object_class" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">object_class</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get the object class.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="object_class-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_class.rb, line 13</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">object_class</span>; <span class="ruby-identifier">@@all_classes</span>[<span class="ruby-string">'Object'</span>]; <span class="ruby-keyword">end</span></pre>
+          </div><!-- object_class-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- object_class-method -->
+
+    
+      <div id="method-c-vm_class" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">vm_class</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get the virtual machine class.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="vm_class-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_class.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">vm_class</span>; <span class="ruby-identifier">@@all_classes</span>[<span class="ruby-string">'VirtualMachine'</span>]; <span class="ruby-keyword">end</span></pre>
+          </div><!-- vm_class-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- vm_class-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-add_shared_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">add_shared_method</span><span
+            class="method-args">(symbol, &block)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Add an instance method to this fOOrth class.</p>
+
+<h4 id="method-i-add_shared_method-label-Parameters%3A">Parameters:<span><a href="#method-i-add_shared_method-label-Parameters%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>symbol - The method symbol to be added.</p>
+</li><li>
+<p>block - The block associated with this method.</p>
+</li></ul>
+
+<h4 id="method-i-add_shared_method-label-Note%3A">Note:<span><a href="#method-i-add_shared_method-label-Note%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<p>The method cache for this symbol is purged for this class and all child
+classes except where the child classes already have there own method.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="add_shared_method-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_class.rb, line 139</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">add_shared_method</span>(<span class="ruby-identifier">symbol</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
+  <span class="ruby-ivar">@dictionary</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">symbol</span>)
+  <span class="ruby-identifier">purge_shared_method</span>(<span class="ruby-identifier">symbol</span>)
+  <span class="ruby-ivar">@dictionary</span>[<span class="ruby-identifier">symbol</span>] = <span class="ruby-identifier">block</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- add_shared_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- add_shared_method-method -->
+
+    
+      <div id="method-i-create_fOOrth_instance" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_fOOrth_instance</span><span
+            class="method-args">(vm)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Create an instance of this fOOrth class.</p>
+
+<h4 id="method-i-create_fOOrth_instance-label-Parameters%3A">Parameters:<span><a href="#method-i-create_fOOrth_instance-label-Parameters%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>vm - The current fOOrth virtual machine.</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="create_fOOrth_instance-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_class.rb, line 105</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create_fOOrth_instance</span>(<span class="ruby-identifier">vm</span>)
+  <span class="ruby-identifier">obj</span> = <span class="ruby-ivar">@instance_template</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">obj</span>.<span class="ruby-identifier">init</span>(<span class="ruby-identifier">vm</span>)  <span class="ruby-comment"># &lt;&lt;&lt; ????? I'm not sure about this!!!</span>
+  <span class="ruby-identifier">obj</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- create_fOOrth_instance-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create_fOOrth_instance-method -->
+
+    
+      <div id="method-i-create_fOOrth_subclass" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_fOOrth_subclass</span><span
+            class="method-args">(vm, name, class_base=XfOOrthClass, &block)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Create a new fOOrth subclass of this class.</p>
+
+<h4 id="method-i-create_fOOrth_subclass-label-Parameters%3A">Parameters:<span><a href="#method-i-create_fOOrth_subclass-label-Parameters%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>vm - The current fOOrth virtual machine.</p>
+</li><li>
+<p>name - The name of the new sub-class.</p>
+</li><li>
+<p>block - An optional class initialization block that takes the vm as  an
+argument.</p>
+</li></ul>
+
+<h4 id="method-i-create_fOOrth_subclass-label-Note%3A">Note:<span><a href="#method-i-create_fOOrth_subclass-label-Note%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<p>If a sub-class with the given name already exists, that class is returned.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="create_fOOrth_subclass-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_class.rb, line 93</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create_fOOrth_subclass</span>(<span class="ruby-identifier">vm</span>, <span class="ruby-identifier">name</span>, <span class="ruby-identifier">class_base</span>=<span class="ruby-constant">XfOOrthClass</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
+  <span class="ruby-identifier">anon</span> = <span class="ruby-constant">Class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">class_base</span>) {<span class="ruby-ivar">@fOOrth_class</span> = <span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">class_class</span>}
+  <span class="ruby-identifier">new_class</span> = <span class="ruby-identifier">anon</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">name</span>, <span class="ruby-keyword">self</span>)
+
+  <span class="ruby-ivar">@children</span>[<span class="ruby-identifier">name</span>] = <span class="ruby-identifier">new_class</span>
+  <span class="ruby-identifier">new_class</span>.<span class="ruby-identifier">instance_exec</span>(<span class="ruby-identifier">vm</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">block</span>
+  <span class="ruby-identifier">new_class</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- create_fOOrth_subclass-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create_fOOrth_subclass-method -->
+
+    
+      <div id="method-i-instance_base_class" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">instance_base_class</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>The base Ruby class for instances of this class.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="instance_base_class-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_class.rb, line 26</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">instance_base_class</span>; <span class="ruby-constant">XfOOrthObject</span>; <span class="ruby-keyword">end</span></pre>
+          </div><!-- instance_base_class-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- instance_base_class-method -->
+
+    
+      <div id="method-i-link_shared_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">link_shared_method</span><span
+            class="method-args">(name, target_class)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Search the object class dictionaries for the named instance method and add
+it to the target class.</p>
+
+<h4 id="method-i-link_shared_method-label-Parameters%3A">Parameters:<span><a href="#method-i-link_shared_method-label-Parameters%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>name - The symbol of the method name to be added.</p>
+</li><li>
+<p>target_class - The class to which the method is added.</p>
+</li></ul>
+
+<h4 id="method-i-link_shared_method-label-Returns%3A">Returns:<span><a href="#method-i-link_shared_method-label-Returns%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<p>True on success else false if name could not be found.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="link_shared_method-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_class.rb, line 118</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">link_shared_method</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">target_class</span>)
+  <span class="ruby-identifier">current</span> = <span class="ruby-keyword">self</span>
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">current</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">current</span>.<span class="ruby-identifier">dictionary</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-identifier">name</span>)
+      <span class="ruby-identifier">target_class</span>.<span class="ruby-identifier">cache_shared_method</span>(<span class="ruby-identifier">name</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">current</span>.<span class="ruby-identifier">dictionary</span>[<span class="ruby-identifier">name</span>])
+      <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span>
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-identifier">current</span> = <span class="ruby-identifier">current</span>.<span class="ruby-identifier">fOOrth_parent</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">false</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- link_shared_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- link_shared_method-method -->
+
+    
+      <div id="method-i-purge_shared_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">purge_shared_method</span><span
+            class="method-args">(symbol)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Purge the instance method cache for the specified symbol.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="purge_shared_method-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_class.rb, line 146</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">purge_shared_method</span>(<span class="ruby-identifier">symbol</span>)
+  <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@dictionary</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-identifier">symbol</span>)
+    <span class="ruby-ivar">@instance_template</span>.<span class="ruby-identifier">purge_method</span>(<span class="ruby-identifier">symbol</span>)
+    <span class="ruby-ivar">@children</span>.<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">name</span>, <span class="ruby-identifier">child</span><span class="ruby-operator">|</span> <span class="ruby-identifier">child</span>.<span class="ruby-identifier">purge_shared_method</span>(<span class="ruby-identifier">symbol</span>)}
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- purge_shared_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- purge_shared_method-method -->
+
+    
+      <div id="method-i-set_fOOrth_parent" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">set_fOOrth_parent</span><span
+            class="method-args">(fOOrth_parent)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Set the class’s parent class for the case where this can not be done when
+the class is constructed. The parent may only be set once.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="set_fOOrth_parent-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_class.rb, line 80</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">set_fOOrth_parent</span>(<span class="ruby-identifier">fOOrth_parent</span>)
+  <span class="ruby-identifier">ferr</span> <span class="ruby-string">&quot;The class parent is already set&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@fOOrth_parent</span>
+  <span class="ruby-ivar">@fOOrth_parent</span> = <span class="ruby-identifier">fOOrth_parent</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- set_fOOrth_parent-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- set_fOOrth_parent-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

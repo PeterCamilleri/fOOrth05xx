@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class XfOOrth::XfOOrthObject - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/fOOrth/fOOrth_object.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="../Object.html">Object</a>
+  
+</nav>
+
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li ><a href="#method-c-cache_shared_method">::cache_shared_method</a>
+    
+    <li ><a href="#method-c-purge_method">::purge_method</a>
+    
+    <li ><a href="#method-i-add_exclusive_method">#add_exclusive_method</a>
+    
+    <li ><a href="#method-i-cache_exclusive_method">#cache_exclusive_method</a>
+    
+    <li ><a href="#method-i-fOOrth_class">#fOOrth_class</a>
+    
+    <li ><a href="#method-i-has_exclusive-3F">#has_exclusive?</a>
+    
+    <li ><a href="#method-i-link_exclusive_method">#link_exclusive_method</a>
+    
+    <li class="calls-super" ><a href="#method-i-method_missing">#method_missing</a>
+    
+    <li ><a href="#method-i-name">#name</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../ClassAndObjectTester.html">ClassAndObjectTester</a>
+  
+    <li><a href="../Complex.html">Complex</a>
+  
+    <li><a href="../ContextTester.html">ContextTester</a>
+  
+    <li><a href="../FileSourceTester.html">FileSourceTester</a>
+  
+    <li><a href="../HelperTester.html">HelperTester</a>
+  
+    <li><a href="../Numeric.html">Numeric</a>
+  
+    <li><a href="../Object.html">Object</a>
+  
+    <li><a href="../Rational.html">Rational</a>
+  
+    <li><a href="../String.html">String</a>
+  
+    <li><a href="../StringSourceTester.html">StringSourceTester</a>
+  
+    <li><a href="../SymEntryTester.html">SymEntryTester</a>
+  
+    <li><a href="../SymHierarchyTester.html">SymHierarchyTester</a>
+  
+    <li><a href="../SymMapTester.html">SymMapTester</a>
+  
+    <li><a href="../XfOOrth.html">XfOOrth</a>
+  
+    <li><a href="../XfOOrth/Context.html">XfOOrth::Context</a>
+  
+    <li><a href="../XfOOrth/FileSource.html">XfOOrth::FileSource</a>
+  
+    <li><a href="../XfOOrth/ReadPoint.html">XfOOrth::ReadPoint</a>
+  
+    <li><a href="../XfOOrth/StringSource.html">XfOOrth::StringSource</a>
+  
+    <li><a href="../XfOOrth/SymEntry.html">XfOOrth::SymEntry</a>
+  
+    <li><a href="../XfOOrth/SymHierarchy.html">XfOOrth::SymHierarchy</a>
+  
+    <li><a href="../XfOOrth/SymMap.html">XfOOrth::SymMap</a>
+  
+    <li><a href="../XfOOrth/VirtualMachine.html">XfOOrth::VirtualMachine</a>
+  
+    <li><a href="../XfOOrth/XVirtualMachine.html">XfOOrth::XVirtualMachine</a>
+  
+    <li><a href="../XfOOrth/XfOOrthClass.html">XfOOrth::XfOOrthClass</a>
+  
+    <li><a href="../XfOOrth/XfOOrthObject.html">XfOOrth::XfOOrthObject</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class XfOOrth::XfOOrthObject</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-c-fOOrth_class" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">fOOrth_class</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>A class field to get the fOOrth_class that this object belongs to.</p>
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-cache_shared_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">cache_shared_method</span><span
+            class="method-args">(symbol, &block)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Cache the specified code block by adding it as a method on the  receiver’s
+class. Thus this method is available to all instances of the fOOrth class
+of this object.</p>
+
+<h4 id="method-c-cache_shared_method-label-Parameters%3A">Parameters:<span><a href="#method-c-cache_shared_method-label-Parameters%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>symbol - The symbol that names the method.</p>
+</li><li>
+<p>block - The code block to be executed.</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="cache_shared_method-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_object.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">cache_shared_method</span>(<span class="ruby-identifier">symbol</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
+  <span class="ruby-identifier">define_method</span>(<span class="ruby-identifier">symbol</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- cache_shared_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- cache_shared_method-method -->
+
+    
+      <div id="method-c-purge_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">purge_method</span><span
+            class="method-args">(symbol)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Remove the specified method from this class. The method is still accessible
+if defined in a super class or mixin.</p>
+
+<h4 id="method-c-purge_method-label-Parameters%3A">Parameters:<span><a href="#method-c-purge_method-label-Parameters%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>symbol - The symbol of the method to be purged.</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="purge_method-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_object.rb, line 78</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">purge_method</span>(<span class="ruby-identifier">symbol</span>)
+  <span class="ruby-identifier">remove_method</span>(<span class="ruby-identifier">symbol</span>)
+<span class="ruby-keyword">rescue</span> <span class="ruby-constant">NameError</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- purge_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- purge_method-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-add_exclusive_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">add_exclusive_method</span><span
+            class="method-args">(symbol, &block)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Add an exclusive method to this fOOrth object.</p>
+
+<h4 id="method-i-add_exclusive_method-label-Parameters%3A">Parameters:<span><a href="#method-i-add_exclusive_method-label-Parameters%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>symbol - The method symbol to be added.</p>
+</li><li>
+<p>block - The block associated with this method.</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="add_exclusive_method-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_object.rb, line 39</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">add_exclusive_method</span>(<span class="ruby-identifier">symbol</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
+  <span class="ruby-ivar">@exclusive</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>     <span class="ruby-comment">#??? WIP Should this not be a SymMap ???</span>
+  <span class="ruby-ivar">@exclusive</span>[<span class="ruby-identifier">symbol</span>] = <span class="ruby-identifier">block</span>  <span class="ruby-comment">#??? WIP @exclusive[symbol].block = block</span>
+  
+  <span class="ruby-comment">#If already cached, override it!</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">responds_to?</span>(<span class="ruby-identifier">symbol</span>)
+    <span class="ruby-identifier">cache_exclusive_method</span>(<span class="ruby-identifier">symbol</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- add_exclusive_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- add_exclusive_method-method -->
+
+    
+      <div id="method-i-cache_exclusive_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">cache_exclusive_method</span><span
+            class="method-args">(symbol, &block)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Cache the specified code block by adding it as a singleton method. Thus
+this method is only available to this object and any clones that are
+subsequently created.</p>
+
+<h4 id="method-i-cache_exclusive_method-label-Parameters%3A">Parameters:<span><a href="#method-i-cache_exclusive_method-label-Parameters%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>symbol - The symbol that names the method.</p>
+</li><li>
+<p>block - The code block to be executed.</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="cache_exclusive_method-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_object.rb, line 55</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">cache_exclusive_method</span>(<span class="ruby-identifier">symbol</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
+  <span class="ruby-identifier">define_singleton_method</span>(<span class="ruby-identifier">symbol</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- cache_exclusive_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- cache_exclusive_method-method -->
+
+    
+      <div id="method-i-fOOrth_class" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fOOrth_class</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>An instance method to get the <a
+href="XfOOrthObject.html#method-i-fOOrth_class">#fOOrth_class</a> that this
+object belongs to.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="fOOrth_class-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_object.rb, line 25</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">fOOrth_class</span>; <span class="ruby-keyword">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">fOOrth_class</span>; <span class="ruby-keyword">end</span></pre>
+          </div><!-- fOOrth_class-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- fOOrth_class-method -->
+
+    
+      <div id="method-i-has_exclusive-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">has_exclusive?</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Does this object have exclusive methods defined on it?</p>
+          
+          
+
+          
+          <div class="method-source-code" id="has_exclusive-3F-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_object.rb, line 31</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">has_exclusive?</span>
+  <span class="ruby-identifier">instance_variable_defined?</span>(<span class="ruby-value">:@exclusive</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- has_exclusive-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- has_exclusive-3F-method -->
+
+    
+      <div id="method-i-link_exclusive_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">link_exclusive_method</span><span
+            class="method-args">(name)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Search the exclusive dictionary for the named method and add it to the
+target class.</p>
+
+<h4 id="method-i-link_exclusive_method-label-Parameters%3A">Parameters:<span><a href="#method-i-link_exclusive_method-label-Parameters%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>name - The symbol of the method name to be added.</p>
+</li></ul>
+
+<h4 id="method-i-link_exclusive_method-label-Returns%3A">Returns:<span><a href="#method-i-link_exclusive_method-label-Returns%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+
+<p>True on success else false if name could not be found.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="link_exclusive_method-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_object.rb, line 65</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">link_exclusive_method</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">has_exclusive?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@exclusive</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-identifier">name</span>)     <span class="ruby-comment">#??? WIP</span>
+    <span class="ruby-identifier">cache_exclusive_method</span>(<span class="ruby-identifier">name</span>, <span class="ruby-operator">&amp;</span><span class="ruby-ivar">@exclusive</span>[<span class="ruby-identifier">name</span>])  <span class="ruby-comment">#??? WIP</span>
+    <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">false</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- link_exclusive_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- link_exclusive_method-method -->
+
+    
+      <div id="method-i-method_missing" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">method_missing</span><span
+            class="method-args">(name, *args, &block)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>The method_missing hook is at the very heart of the fOOrth language
+compiler. It is here that code blocks are added for both shared and 
+exclusive methods.</p>
+
+<h4 id="method-i-method_missing-label-Parameters%3A">Parameters:<span><a href="#method-i-method_missing-label-Parameters%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+<ul><li>
+<p>name - The name of the missing method.</p>
+</li><li>
+<p>args - Any arguments that were passed to that method.</p>
+</li><li>
+<p>block - Any block that might have passed to the method.</p>
+</li></ul>
+
+<h4 id="method-i-method_missing-label-Notes%3A">Notes:<span><a href="#method-i-method_missing-label-Notes%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h4>
+          
+          
+            <div class="method-calls-super">
+              Calls superclass method
+              
+            </div>
+          
+
+          
+          <div class="method-source-code" id="method_missing-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_object.rb, line 91</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">method_missing</span>(<span class="ruby-identifier">name</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">link_exclusive_method</span>(<span class="ruby-identifier">name</span>) <span class="ruby-operator">||</span> <span class="ruby-identifier">fOOrth_class</span>.<span class="ruby-identifier">link_shared_method</span>(<span class="ruby-identifier">name</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">class</span>)
+    <span class="ruby-identifier">send</span>(<span class="ruby-identifier">name</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">super</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- method_missing-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- method_missing-method -->
+
+    
+      <div id="method-i-name" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">name</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get the name of this object.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="name-source">
+            <pre><span class="ruby-comment"># File lib/fOOrth/fOOrth_object.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">name</span>; <span class="ruby-node">&quot;#{fOOrth_class.name} instance.&quot;</span>; <span class="ruby-keyword">end</span></pre>
+          </div><!-- name-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- name-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

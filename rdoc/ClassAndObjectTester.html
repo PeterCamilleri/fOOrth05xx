@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class ClassAndObjectTester - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>tests/fOOrth_class_test.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">MiniTest::Unit::TestCase
+  
+</nav>
+
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li class="calls-super" ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-setup">#setup</a>
+    
+    <li ><a href="#method-i-test_a_method_added_to_Object1">#test_a_method_added_to_Object1</a>
+    
+    <li ><a href="#method-i-test_a_method_added_to_Object2">#test_a_method_added_to_Object2</a>
+    
+    <li ><a href="#method-i-test_a_method_inherited_into_MyClass1">#test_a_method_inherited_into_MyClass1</a>
+    
+    <li ><a href="#method-i-test_a_method_inherited_into_MyClass2">#test_a_method_inherited_into_MyClass2</a>
+    
+    <li ><a href="#method-i-test_a_method_inherited_into_MyClass3">#test_a_method_inherited_into_MyClass3</a>
+    
+    <li ><a href="#method-i-test_a_method_purged_from_MyClass">#test_a_method_purged_from_MyClass</a>
+    
+    <li ><a href="#method-i-test_an_instance_of_Object">#test_an_instance_of_Object</a>
+    
+    <li ><a href="#method-i-test_an_instance_of_a_subclass">#test_an_instance_of_a_subclass</a>
+    
+    <li ><a href="#method-i-test_initial_population_of_all_classes">#test_initial_population_of_all_classes</a>
+    
+    <li ><a href="#method-i-test_method_change_propagation">#test_method_change_propagation</a>
+    
+    <li ><a href="#method-i-test_that_Class_is_a_class">#test_that_Class_is_a_class</a>
+    
+    <li ><a href="#method-i-test_that_Object_has_no_parent">#test_that_Object_has_no_parent</a>
+    
+    <li ><a href="#method-i-test_that_Object_is_a_class">#test_that_Object_is_a_class</a>
+    
+    <li ><a href="#method-i-test_that_Object_is_the_parent_of_Class">#test_that_Object_is_the_parent_of_Class</a>
+    
+    <li ><a href="#method-i-test_that_a_subclass_is_created">#test_that_a_subclass_is_created</a>
+    
+    <li ><a href="#method-i-test_that_classes_are_named">#test_that_classes_are_named</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./ClassAndObjectTester.html">ClassAndObjectTester</a>
+  
+    <li><a href="./Complex.html">Complex</a>
+  
+    <li><a href="./ContextTester.html">ContextTester</a>
+  
+    <li><a href="./FileSourceTester.html">FileSourceTester</a>
+  
+    <li><a href="./HelperTester.html">HelperTester</a>
+  
+    <li><a href="./Numeric.html">Numeric</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./Rational.html">Rational</a>
+  
+    <li><a href="./String.html">String</a>
+  
+    <li><a href="./StringSourceTester.html">StringSourceTester</a>
+  
+    <li><a href="./SymEntryTester.html">SymEntryTester</a>
+  
+    <li><a href="./SymHierarchyTester.html">SymHierarchyTester</a>
+  
+    <li><a href="./SymMapTester.html">SymMapTester</a>
+  
+    <li><a href="./XfOOrth.html">XfOOrth</a>
+  
+    <li><a href="./XfOOrth/Context.html">XfOOrth::Context</a>
+  
+    <li><a href="./XfOOrth/FileSource.html">XfOOrth::FileSource</a>
+  
+    <li><a href="./XfOOrth/ReadPoint.html">XfOOrth::ReadPoint</a>
+  
+    <li><a href="./XfOOrth/StringSource.html">XfOOrth::StringSource</a>
+  
+    <li><a href="./XfOOrth/SymEntry.html">XfOOrth::SymEntry</a>
+  
+    <li><a href="./XfOOrth/SymHierarchy.html">XfOOrth::SymHierarchy</a>
+  
+    <li><a href="./XfOOrth/SymMap.html">XfOOrth::SymMap</a>
+  
+    <li><a href="./XfOOrth/VirtualMachine.html">XfOOrth::VirtualMachine</a>
+  
+    <li><a href="./XfOOrth/XVirtualMachine.html">XfOOrth::XVirtualMachine</a>
+  
+    <li><a href="./XfOOrth/XfOOrthClass.html">XfOOrth::XfOOrthClass</a>
+  
+    <li><a href="./XfOOrth/XfOOrthObject.html">XfOOrth::XfOOrthObject</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class ClassAndObjectTester</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(*all)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Special initialize to track rake progress.</p>
+          
+          
+            <div class="method-calls-super">
+              Calls superclass method
+              
+            </div>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File tests/fOOrth_class_test.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">all</span>)
+  <span class="ruby-identifier">$do_this_only_one_time</span> = <span class="ruby-string">&quot;&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-keyword">defined?</span> <span class="ruby-identifier">$do_this_only_one_time</span>
+  
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">$do_this_only_one_time</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword">__FILE__</span>
+    <span class="ruby-identifier">puts</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Running test file: #{File.split(__FILE__)[1]}&quot;</span> 
+    <span class="ruby-identifier">$do_this_only_one_time</span> = <span class="ruby-keyword">__FILE__</span>
+  <span class="ruby-keyword">end</span>
+  
+  <span class="ruby-keyword">super</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">all</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-setup" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">setup</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Create the initial conditions.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="setup-source">
+            <pre><span class="ruby-comment"># File tests/fOOrth_class_test.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">setup</span>
+  <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">_create_initial_classes</span>(<span class="ruby-keyword">true</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- setup-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- setup-method -->
+
+    
+      <div id="method-i-test_a_method_added_to_Object1" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_a_method_added_to_Object1</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Verify a method added to <a href="Object.html">Object</a> (part 1/2)</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_a_method_added_to_Object1-source">
+            <pre><span class="ruby-comment"># File tests/fOOrth_class_test.rb, line 105</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_a_method_added_to_Object1</span>
+  <span class="ruby-identifier">oc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">object_class</span>
+  <span class="ruby-identifier">oc</span>.<span class="ruby-identifier">add_shared_method</span>(<span class="ruby-value">:testing</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">vm</span><span class="ruby-operator">|</span> <span class="ruby-value">123</span>}
+  <span class="ruby-identifier">oi</span> = <span class="ruby-identifier">oc</span>.<span class="ruby-identifier">create_fOOrth_instance</span>(<span class="ruby-keyword">nil</span>)
+  
+  <span class="ruby-identifier">refute</span>(<span class="ruby-identifier">oi</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:testing</span>))
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">123</span>, <span class="ruby-identifier">oi</span>.<span class="ruby-identifier">testing</span>(<span class="ruby-keyword">nil</span>))
+  <span class="ruby-identifier">assert</span>(<span class="ruby-identifier">oi</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:testing</span>))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_a_method_added_to_Object1-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_a_method_added_to_Object1-method -->
+
+    
+      <div id="method-i-test_a_method_added_to_Object2" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_a_method_added_to_Object2</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Verify a method added to <a href="Object.html">Object</a> (part 2/2)</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_a_method_added_to_Object2-source">
+            <pre><span class="ruby-comment"># File tests/fOOrth_class_test.rb, line 116</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_a_method_added_to_Object2</span>
+  <span class="ruby-identifier">oc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">object_class</span>
+  <span class="ruby-identifier">oi</span> = <span class="ruby-identifier">oc</span>.<span class="ruby-identifier">create_fOOrth_instance</span>(<span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">oc</span>.<span class="ruby-identifier">add_shared_method</span>(<span class="ruby-value">:testing</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">vm</span><span class="ruby-operator">|</span> <span class="ruby-value">123</span>}
+  
+  <span class="ruby-identifier">refute</span>(<span class="ruby-identifier">oi</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:testing</span>))
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">123</span>, <span class="ruby-identifier">oi</span>.<span class="ruby-identifier">testing</span>(<span class="ruby-keyword">nil</span>))
+  <span class="ruby-identifier">assert</span>(<span class="ruby-identifier">oi</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:testing</span>))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_a_method_added_to_Object2-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_a_method_added_to_Object2-method -->
+
+    
+      <div id="method-i-test_a_method_inherited_into_MyClass1" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_a_method_inherited_into_MyClass1</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Verify a method inherited by a subclass (part 1/3)</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_a_method_inherited_into_MyClass1-source">
+            <pre><span class="ruby-comment"># File tests/fOOrth_class_test.rb, line 127</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_a_method_inherited_into_MyClass1</span>
+  <span class="ruby-identifier">oc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">object_class</span>
+  <span class="ruby-identifier">oc</span>.<span class="ruby-identifier">add_shared_method</span>(<span class="ruby-value">:testing</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">vm</span><span class="ruby-operator">|</span> <span class="ruby-value">123</span>}
+  <span class="ruby-identifier">mc</span> = <span class="ruby-identifier">oc</span>.<span class="ruby-identifier">create_fOOrth_subclass</span>(<span class="ruby-keyword">nil</span>, <span class="ruby-string">'MyClass'</span>)
+  <span class="ruby-identifier">im</span> = <span class="ruby-identifier">mc</span>.<span class="ruby-identifier">create_fOOrth_instance</span>(<span class="ruby-keyword">nil</span>)
+  
+  <span class="ruby-identifier">refute</span>(<span class="ruby-identifier">im</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:testing</span>))
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">123</span>, <span class="ruby-identifier">im</span>.<span class="ruby-identifier">testing</span>(<span class="ruby-keyword">nil</span>))
+  <span class="ruby-identifier">assert</span>(<span class="ruby-identifier">im</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:testing</span>))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_a_method_inherited_into_MyClass1-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_a_method_inherited_into_MyClass1-method -->
+
+    
+      <div id="method-i-test_a_method_inherited_into_MyClass2" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_a_method_inherited_into_MyClass2</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Verify a method inherited by a subclass (part 2/3)</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_a_method_inherited_into_MyClass2-source">
+            <pre><span class="ruby-comment"># File tests/fOOrth_class_test.rb, line 139</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_a_method_inherited_into_MyClass2</span>
+  <span class="ruby-identifier">oc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">object_class</span>
+  <span class="ruby-identifier">mc</span> = <span class="ruby-identifier">oc</span>.<span class="ruby-identifier">create_fOOrth_subclass</span>(<span class="ruby-keyword">nil</span>, <span class="ruby-string">'MyClass'</span>)
+  <span class="ruby-identifier">oc</span>.<span class="ruby-identifier">add_shared_method</span>(<span class="ruby-value">:testing</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">vm</span><span class="ruby-operator">|</span> <span class="ruby-value">123</span>}
+  <span class="ruby-identifier">im</span> = <span class="ruby-identifier">mc</span>.<span class="ruby-identifier">create_fOOrth_instance</span>(<span class="ruby-keyword">nil</span>)
+  
+  <span class="ruby-identifier">refute</span>(<span class="ruby-identifier">im</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:testing</span>))
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">123</span>, <span class="ruby-identifier">im</span>.<span class="ruby-identifier">testing</span>(<span class="ruby-keyword">nil</span>))
+  <span class="ruby-identifier">assert</span>(<span class="ruby-identifier">im</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:testing</span>))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_a_method_inherited_into_MyClass2-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_a_method_inherited_into_MyClass2-method -->
+
+    
+      <div id="method-i-test_a_method_inherited_into_MyClass3" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_a_method_inherited_into_MyClass3</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Verify a method inherited by a subclass (part 3/3)</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_a_method_inherited_into_MyClass3-source">
+            <pre><span class="ruby-comment"># File tests/fOOrth_class_test.rb, line 151</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_a_method_inherited_into_MyClass3</span>
+  <span class="ruby-identifier">oc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">object_class</span>
+  <span class="ruby-identifier">mc</span> = <span class="ruby-identifier">oc</span>.<span class="ruby-identifier">create_fOOrth_subclass</span>(<span class="ruby-keyword">nil</span>, <span class="ruby-string">'MyClass'</span>)
+  <span class="ruby-identifier">im</span> = <span class="ruby-identifier">mc</span>.<span class="ruby-identifier">create_fOOrth_instance</span>(<span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">oc</span>.<span class="ruby-identifier">add_shared_method</span>(<span class="ruby-value">:testing</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">vm</span><span class="ruby-operator">|</span> <span class="ruby-value">123</span>}
+  
+  <span class="ruby-identifier">refute</span>(<span class="ruby-identifier">im</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:testing</span>))
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">123</span>, <span class="ruby-identifier">im</span>.<span class="ruby-identifier">testing</span>(<span class="ruby-keyword">nil</span>))
+  <span class="ruby-identifier">assert</span>(<span class="ruby-identifier">im</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:testing</span>))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_a_method_inherited_into_MyClass3-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_a_method_inherited_into_MyClass3-method -->
+
+    
+      <div id="method-i-test_a_method_purged_from_MyClass" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_a_method_purged_from_MyClass</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Verify a method added to <a href="Object.html">Object</a> and purged from
+MyClass</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_a_method_purged_from_MyClass-source">
+            <pre><span class="ruby-comment"># File tests/fOOrth_class_test.rb, line 163</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_a_method_purged_from_MyClass</span>
+  <span class="ruby-identifier">oc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">object_class</span>
+  <span class="ruby-identifier">mc</span> = <span class="ruby-identifier">oc</span>.<span class="ruby-identifier">create_fOOrth_subclass</span>(<span class="ruby-keyword">nil</span>, <span class="ruby-string">'MyClass'</span>)
+  <span class="ruby-identifier">oc</span>.<span class="ruby-identifier">add_shared_method</span>(<span class="ruby-value">:testing</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">vm</span><span class="ruby-operator">|</span> <span class="ruby-value">123</span>}
+  <span class="ruby-identifier">im</span> = <span class="ruby-identifier">mc</span>.<span class="ruby-identifier">create_fOOrth_instance</span>(<span class="ruby-keyword">nil</span>)
+  
+  <span class="ruby-identifier">refute</span>(<span class="ruby-identifier">im</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:testing</span>))
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">123</span>, <span class="ruby-identifier">im</span>.<span class="ruby-identifier">testing</span>(<span class="ruby-keyword">nil</span>))
+  <span class="ruby-identifier">assert</span>(<span class="ruby-identifier">im</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:testing</span>))
+  
+  <span class="ruby-identifier">mc</span>.<span class="ruby-identifier">purge_shared_method</span>(<span class="ruby-value">:testing</span>)
+  
+  <span class="ruby-identifier">refute</span>(<span class="ruby-identifier">im</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:testing</span>))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_a_method_purged_from_MyClass-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_a_method_purged_from_MyClass-method -->
+
+    
+      <div id="method-i-test_an_instance_of_Object" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_an_instance_of_Object</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Verify an instance of <a href="Object.html">Object</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_an_instance_of_Object-source">
+            <pre><span class="ruby-comment"># File tests/fOOrth_class_test.rb, line 73</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_an_instance_of_Object</span>
+  <span class="ruby-identifier">oc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">object_class</span>
+  <span class="ruby-identifier">oi</span> = <span class="ruby-identifier">oc</span>.<span class="ruby-identifier">create_fOOrth_instance</span>(<span class="ruby-keyword">nil</span>)
+  
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">oi</span>.<span class="ruby-identifier">fOOrth_class</span>, <span class="ruby-identifier">oc</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">oi</span>.<span class="ruby-identifier">fOOrth_class</span>.<span class="ruby-identifier">name</span>, <span class="ruby-string">'Object'</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">oi</span>.<span class="ruby-identifier">name</span>, <span class="ruby-string">&quot;Object instance.&quot;</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_an_instance_of_Object-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_an_instance_of_Object-method -->
+
+    
+      <div id="method-i-test_an_instance_of_a_subclass" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_an_instance_of_a_subclass</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Verify an instance of MyClass</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_an_instance_of_a_subclass-source">
+            <pre><span class="ruby-comment"># File tests/fOOrth_class_test.rb, line 94</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_an_instance_of_a_subclass</span>
+  <span class="ruby-identifier">oc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">object_class</span>
+  <span class="ruby-identifier">mc</span> = <span class="ruby-identifier">oc</span>.<span class="ruby-identifier">create_fOOrth_subclass</span>(<span class="ruby-keyword">nil</span>, <span class="ruby-string">'MyClass'</span>)
+  <span class="ruby-identifier">im</span> = <span class="ruby-identifier">mc</span>.<span class="ruby-identifier">create_fOOrth_instance</span>(<span class="ruby-keyword">nil</span>)
+  
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">im</span>.<span class="ruby-identifier">fOOrth_class</span>, <span class="ruby-identifier">mc</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">im</span>.<span class="ruby-identifier">fOOrth_class</span>.<span class="ruby-identifier">name</span>, <span class="ruby-string">'MyClass'</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">im</span>.<span class="ruby-identifier">name</span>, <span class="ruby-string">&quot;MyClass instance.&quot;</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_an_instance_of_a_subclass-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_an_instance_of_a_subclass-method -->
+
+    
+      <div id="method-i-test_initial_population_of_all_classes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_initial_population_of_all_classes</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Test initial conditions created when classes are first created.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_initial_population_of_all_classes-source">
+            <pre><span class="ruby-comment"># File tests/fOOrth_class_test.rb, line 24</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_initial_population_of_all_classes</span>
+  <span class="ruby-identifier">oc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">object_class</span>
+  <span class="ruby-identifier">cc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">class_class</span>
+  <span class="ruby-identifier">all</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">all_classes</span>
+  
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">oc</span>, <span class="ruby-identifier">all</span>[<span class="ruby-string">'Object'</span>])
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">cc</span>, <span class="ruby-identifier">all</span>[<span class="ruby-string">'Class'</span>])
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_initial_population_of_all_classes-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_initial_population_of_all_classes-method -->
+
+    
+      <div id="method-i-test_method_change_propagation" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_method_change_propagation</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Verify method change propagation.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_method_change_propagation-source">
+            <pre><span class="ruby-comment"># File tests/fOOrth_class_test.rb, line 179</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_method_change_propagation</span>
+  <span class="ruby-identifier">oc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">object_class</span>
+  <span class="ruby-identifier">mc</span> = <span class="ruby-identifier">oc</span>.<span class="ruby-identifier">create_fOOrth_subclass</span>(<span class="ruby-keyword">nil</span>, <span class="ruby-string">'MyClass'</span>)
+  <span class="ruby-identifier">oc</span>.<span class="ruby-identifier">add_shared_method</span>(<span class="ruby-value">:testing</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">vm</span><span class="ruby-operator">|</span> <span class="ruby-value">123</span>}
+  <span class="ruby-identifier">im</span> = <span class="ruby-identifier">mc</span>.<span class="ruby-identifier">create_fOOrth_instance</span>(<span class="ruby-keyword">nil</span>)
+  
+  <span class="ruby-identifier">refute</span>(<span class="ruby-identifier">im</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:testing</span>))
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">123</span>, <span class="ruby-identifier">im</span>.<span class="ruby-identifier">testing</span>(<span class="ruby-keyword">nil</span>))
+  <span class="ruby-identifier">assert</span>(<span class="ruby-identifier">im</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:testing</span>))
+  
+  <span class="ruby-identifier">oc</span>.<span class="ruby-identifier">add_shared_method</span>(<span class="ruby-value">:testing</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">vm</span><span class="ruby-operator">|</span> <span class="ruby-value">246</span>}
+  
+  <span class="ruby-identifier">refute</span>(<span class="ruby-identifier">im</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:testing</span>))
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">246</span>, <span class="ruby-identifier">im</span>.<span class="ruby-identifier">testing</span>(<span class="ruby-keyword">nil</span>))
+  <span class="ruby-identifier">assert</span>(<span class="ruby-identifier">im</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:testing</span>))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_method_change_propagation-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_method_change_propagation-method -->
+
+    
+      <div id="method-i-test_that_Class_is_a_class" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_that_Class_is_a_class</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Verify that class Class is a Class.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_that_Class_is_a_class-source">
+            <pre><span class="ruby-comment"># File tests/fOOrth_class_test.rb, line 42</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_that_Class_is_a_class</span>
+  <span class="ruby-identifier">cc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">class_class</span>
+  
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">cc</span>.<span class="ruby-identifier">fOOrth_class</span>, <span class="ruby-identifier">cc</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_that_Class_is_a_class-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_that_Class_is_a_class-method -->
+
+    
+      <div id="method-i-test_that_Object_has_no_parent" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_that_Object_has_no_parent</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Verify that the <a href="Object.html">Object</a> has no parent.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_that_Object_has_no_parent-source">
+            <pre><span class="ruby-comment"># File tests/fOOrth_class_test.rb, line 57</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_that_Object_has_no_parent</span>
+  <span class="ruby-identifier">oc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">object_class</span>
+  
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">oc</span>.<span class="ruby-identifier">fOOrth_parent</span>, <span class="ruby-keyword">nil</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_that_Object_has_no_parent-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_that_Object_has_no_parent-method -->
+
+    
+      <div id="method-i-test_that_Object_is_a_class" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_that_Object_is_a_class</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Verify that class <a href="Object.html">Object</a> is a Class.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_that_Object_is_a_class-source">
+            <pre><span class="ruby-comment"># File tests/fOOrth_class_test.rb, line 34</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_that_Object_is_a_class</span>
+  <span class="ruby-identifier">oc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">object_class</span>
+  <span class="ruby-identifier">cc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">class_class</span>
+  
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">oc</span>.<span class="ruby-identifier">fOOrth_class</span>, <span class="ruby-identifier">cc</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_that_Object_is_a_class-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_that_Object_is_a_class-method -->
+
+    
+      <div id="method-i-test_that_Object_is_the_parent_of_Class" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_that_Object_is_the_parent_of_Class</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Verify that the parent of Class is <a href="Object.html">Object</a>.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_that_Object_is_the_parent_of_Class-source">
+            <pre><span class="ruby-comment"># File tests/fOOrth_class_test.rb, line 49</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_that_Object_is_the_parent_of_Class</span>
+  <span class="ruby-identifier">oc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">object_class</span>
+  <span class="ruby-identifier">cc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">class_class</span>
+  
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">cc</span>.<span class="ruby-identifier">fOOrth_parent</span>, <span class="ruby-identifier">oc</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_that_Object_is_the_parent_of_Class-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_that_Object_is_the_parent_of_Class-method -->
+
+    
+      <div id="method-i-test_that_a_subclass_is_created" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_that_a_subclass_is_created</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Verify a subclass of <a href="Object.html">Object</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_that_a_subclass_is_created-source">
+            <pre><span class="ruby-comment"># File tests/fOOrth_class_test.rb, line 83</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_that_a_subclass_is_created</span>
+  <span class="ruby-identifier">oc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">object_class</span>
+  <span class="ruby-identifier">cc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">class_class</span>
+  <span class="ruby-identifier">mc</span> = <span class="ruby-identifier">oc</span>.<span class="ruby-identifier">create_fOOrth_subclass</span>(<span class="ruby-keyword">nil</span>, <span class="ruby-string">'MyClass'</span>)
+  
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">mc</span>.<span class="ruby-identifier">fOOrth_class</span>, <span class="ruby-identifier">cc</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">mc</span>.<span class="ruby-identifier">name</span>, <span class="ruby-string">'MyClass'</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">mc</span>.<span class="ruby-identifier">fOOrth_parent</span>, <span class="ruby-identifier">oc</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_that_a_subclass_is_created-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_that_a_subclass_is_created-method -->
+
+    
+      <div id="method-i-test_that_classes_are_named" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_that_classes_are_named</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Verify class names.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_that_classes_are_named-source">
+            <pre><span class="ruby-comment"># File tests/fOOrth_class_test.rb, line 64</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_that_classes_are_named</span>
+  <span class="ruby-identifier">oc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">object_class</span>
+  <span class="ruby-identifier">cc</span> = <span class="ruby-constant">XfOOrth</span><span class="ruby-operator">::</span><span class="ruby-constant">XfOOrthClass</span>.<span class="ruby-identifier">class_class</span>
+  
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">oc</span>.<span class="ruby-identifier">name</span>, <span class="ruby-string">'Object'</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">cc</span>.<span class="ruby-identifier">name</span>, <span class="ruby-string">'Class'</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_that_classes_are_named-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_that_classes_are_named-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

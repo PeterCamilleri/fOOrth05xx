@@ -1,0 +1,32 @@
+cr ."Vocabulary Test Suite #1" cr
+
+: msg ."This was compiled under System" cr ;
+
+voc_delete"Test"
+voc_create"Test"
+voc_path cr
+: msg ."This was compiled under Test" cr ;
+
+cr cr cr
+.": test1 Test::msg ;" cr
+.": test2 System::msg ;" cr
+.": test3 msg ;" cr
+
+: test1 Test::msg ; 
+: test2 System::msg ;
+: test3 msg ;
+
+cr cr cr
+
+."test1" cr test1
+."test2" cr test2
+."test3" cr test3
+
+cr voc_path 
+."voc_employ\"System\"" cr 
+voc_employ"System"
+voc_path cr
+
+."test1" cr test1
+."test2" cr test2
+."test3" cr test3
